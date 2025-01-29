@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Fraud Detection</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Credit Card Fraud Detection Model</h1>
+      </header>
+
+      <div class="prediction-section">
+        <h2>Random Transaction Prediction</h2>
+        <button id="predict-btn" class="predict-button">
+          Predict Random Transaction
+        </button>
+        <div id="transaction-details" class="transaction-details"></div>
+      </div>
+
+      <div class="results-section">
+        <div id="predictionResult"></div>
+        <div class="graphs-container">
+          <div id="current-response-plot" class="graph"></div>
+          <div id="response-history-plot" class="graph"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
