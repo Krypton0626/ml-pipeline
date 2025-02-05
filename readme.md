@@ -24,7 +24,7 @@ The model training process is implemented in `train_model.py` (see **Figure 2**)
 
 This process ensures that the model deployment is based on an optimized and robust training routine.
 
-![Training Process](/images/training-process.png)
+![Training Process](/Images/training-process.png)
 
 **Figure 2:** Training Process with LightGBM
 
@@ -48,7 +48,7 @@ Through simulated requests, the API performance was continuously monitored, allo
 - The script generates 20 random input samples, sends them to the API endpoint, and records the response time for each request.
 - After executing the requests, it plots the response times against the request numbers, providing a visual representation of the server's performance.
 
-![Client](/images/client.png)
+![Client](/Images/client.png)
 
 **Figure 3:** Client.py
 
@@ -58,7 +58,7 @@ The final design follows a well-structured separation of concerns:
 
 - The **server (`server.py`)** manages model training, inference, and backend execution.
 
-![Credit Card Fraud Detection Model Interface](/images/interface.jpg)
+![Credit Card Fraud Detection Model Interface](/Images/interface.jpg)
 
 **Figure 4:** Credit Card Fraud Detection Model Interface
 
@@ -66,7 +66,7 @@ The web interface visualized in **Figure 4** has a "**Predict Random Transaction
 
 - The **client (`client.py`)** sends API requests and processes responses.
 
-![Server Response Time](/images/response-time.jpg)
+![Server Response Time](/Images/response-time.jpg)
 
 **Figure 5:** Server Response Time Per Request
 
